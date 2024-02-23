@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "INICIAL";
+    ViewContext.RouteData.Values["action"] = "Index";
+}
+
+ <!-- Banner -->
+    <header class="color-bg text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo ao Sistema Integrado de Gestão</h1>
+            <p>Este é um sistema base para fazer a gestão de arquivos e usuários </p>
+            <a href="#" class="btn btn-light btn-lg">Saiba Mais</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página -->
+    <div class="container mt-5">
+        <h2>Seção de Conteúdo</h2>
+        <p>Aqui você pode adicionar o conteúdo da sua página.</p>
+    </div>
+
+     <!-- Primeira Seção - 3 Cards com Botões -->
+    <div class="container mt-5">
+        <h2>Nossos Serviços</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow mb-4" style="background-color: #31678b; color: #fff;">
+	                <div class="card-body">
+	                    <h5 class="card-title"><i class="fa fa-user mx-2" aria-hidden="true"></i>Cadastro de Usuários </h5>
+	                    <p class="card-text">Gestão de Usuários </p>
+	                    <a asp-area="" asp-controller="Home" asp-action="Cadastro" class="btn btn-light">Entrar</a>
+	                </div>
+	            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow mb-4" style="background-color: #295a6e; color: #fff;">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-alt mx-2" aria-hidden="true"></i>Cadastro de Arquivos</h5>
+                        <p class="card-text">Gestão de Usuários</p>
+	                    <a asp-area="" asp-controller="Home" asp-action="Arquivo" class="btn btn-light">Entrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+				<div class="card shadow mb-4" style="background-color: #214452; color: #fff;">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa fa-user mx-2" aria-hidden="true"></i>Login </h5>
+                        <p class="card-text">Administração </p>
+	                    <a asp-area="" asp-controller="Home" asp-action="Login" class="btn btn-light">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segunda Seção - Conteúdo Livre -->
+    <div class="container mt-5">
+        <h2>Outras Informações</h2>
+        <p>
+            Esta é a segunda seção da página de conteúdo livre. Aqui você pode adicionar qualquer informação ou conteúdo adicional que desejar.
+        </p>
+    </div>

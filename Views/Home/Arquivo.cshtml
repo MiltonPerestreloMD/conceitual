@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "ARQUIVO";
+    ViewContext.RouteData.Values["action"] = "Arquivo";
+}
+
+    <!-- Banner -->
+    <header class="color-bg text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo ao Sistema Integrado de Gestão</h1>
+            <p>Este é um sistema base para fazer a gestão de arquivos e usuários </p>
+            <a href="#" class="btn btn-light btn-lg">Cadastro de Arquivo</a>
+        </div>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <div class="container mt-5">
+        <div class="row">
+           <div style="margin-left: 20%;" class="col-7 my-5">
+                <h2>Formulário de Cadastro de Arquivo</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Autor</label>
+                        <input type="text" class="form-control" id="autor" placeholder="Nome do autor">
+                    </div>
+                    <div class="mb-3">
+                        <label for="link" class="form-label">Link do Arquivo</label>
+                        <input type="url" class="form-control" id="link">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-nascimento" class="form-label">Data de cadastro</label>
+                        <input type="date" class="form-control" id="data-nascimento">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>    
+        </div>
+    </div>
+

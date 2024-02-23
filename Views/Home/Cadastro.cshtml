@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "CADASTRO";
+    ViewContext.RouteData.Values["action"] = "Cadastro";
+}
+
+
+    <!-- Banner -->
+    <header class="color-bg text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo ao Sistema Integrado de Gestão</h1>
+            <p>Este é um sistema base para fazer a gestão de arquivos e usuários </p>
+            <a href="#" class="btn btn-light btn-lg">Cadastro de Usuários</a>
+        </div>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <div class="container mt-5">
+        <div class="row">
+           <div style="margin-left: 20%;" class="col-7 my-5">
+                <h2>Formulário de Cadastro de Usuário</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-nascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="data-nascimento">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>    
+        </div>
+    </div>
+
+

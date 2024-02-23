@@ -1,0 +1,89 @@
+
+@{
+   Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGI - LOGIN</title>
+    <!-- Inclua o link para o Bootstrap 5 (pode ser o link CDN) -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/font-icon/fontawesome-all.min.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container ">
+            <a class="navbar-brand" href="#">Minha Página</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Outro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  asp-area="" asp-controller="Home" asp-action="Cadastro">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  asp-area="" asp-controller="Home" asp-action="Arquivo">Arquivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="color-bg text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo ao Sistema Integrado de Gestão</h1>
+            <p>Este é um sistema base para fazer a gestão de arquivos e usuários </p>
+            <a href="#" class="btn btn-light btn-lg">Login de Usuário</a>
+        </div>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <div class="container mt-5">
+        <div class="row">
+           <div style="margin-left: 20%;" class="col-7 my-5">
+                <h2>Formulário de Login</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>    
+        </div>
+    </div>
+
+
+  	<!-- footer -->
+    <footer class="footer position-relative py-2">
+    <div class="container">
+      <div class="midd-footer align-center py-2 mt-2">
+        <p class="copy-footer text-center">© 2023 SIG. All rights reserved. Design by <a
+            href="#">SIG</a></p>
+      </div>
+    </div>
+
+    <!-- Inclua os scripts do Bootstrap no final do documento para um carregamento mais rápido -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
